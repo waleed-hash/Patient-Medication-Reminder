@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+ Patient Medication Reminder App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
 
-## Available Scripts
+The Patient Medication Reminder App is a React-based web application designed to help patients manage their medication schedules. It provides a user-friendly interface for adding, viewing, and deleting medication reminders, and sends notifications when it's time to take a medication.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+- Add medications with name, dosage, and time
+- View list of all medications
+- Delete medications
+- Real-time clock display (Central Time)
+- Automatic notifications when it's time to take a medication
+- Test notification feature
+- Firebase integration for real-time data storage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- TypeScript
+- Firebase (Firestore)
+- Tailwind CSS
 
-### `npm test`
+Setup and Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/patient-medication-reminder.git
+   cd patient-medication-reminder
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Set up Firebase:
+   - Create a Firebase project at https://console.firebase.google.com/
+   - Enable Firestore in your project
+   - Copy your Firebase configuration (found in Project Settings)
+   - Update the `firebaseConfig` object in `src/firebase.ts` with your configuration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open http://localhost:3000 in your browser to view the app.
 
-### `npm run eject`
+Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- To add a medication: Fill out the form with the medication name, dosage, and time, then click "Add Medication".
+- To delete a medication: Click the "Delete" button next to the medication you want to remove.
+- To test notifications: Click the "Test Notification" button.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To build the app for production:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm run build
+```
 
-## Learn More
+This creates a `build` folder with a production build of the app. You can then deploy this to your preferred hosting service.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+License
+
+This project is open source and available under the [MIT License](LICENSE).
