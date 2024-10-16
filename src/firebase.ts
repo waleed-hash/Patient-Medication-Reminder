@@ -3,13 +3,13 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBCY_bf5xZxOvf6J4YwjzAcUNzkwAAQYCM",
-  authDomain: "patient-reminder-94785.firebaseapp.com",
-  projectId: "patient-reminder-94785",
-  storageBucket: "patient-reminder-94785.appspot.com",
-  messagingSenderId: "356181246305",
-  appId: "1:356181246305:web:b21f417eabae5afc6d4520",
-  measurementId: "G-WRS0B69RBR"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

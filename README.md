@@ -38,7 +38,16 @@ Setup and Installation
    - Create a Firebase project at https://console.firebase.google.com/
    - Enable Firestore in your project
    - Copy your Firebase configuration (found in Project Settings)
-   - Update the `firebaseConfig` object in `src/firebase.ts` with your configuration
+   - Create a `.env` file in the root directory of the project
+   - Add your Firebase configuration to the `.env` file as follows:
+     ```
+     REACT_APP_FIREBASE_API_KEY=your_api_key
+     REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+     REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+     REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+     REACT_APP_FIREBASE_APP_ID=your_app_id
+     ```
 
 4. Start the development server:
    ```
